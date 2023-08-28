@@ -1,7 +1,18 @@
+import CardFront from './components/CardFront';
+import CardBack from './components/CardBack';
+import CardForm from './components/CardForm';
+
 function App() {
   return (
     <div>
-      <h1>credit card form</h1>
+      <div className="card">
+        <CardFront />
+        <CardBack />
+      </div>
+
+      <div className="form">
+        <CardForm />
+      </div>
     </div>
   );
 }
