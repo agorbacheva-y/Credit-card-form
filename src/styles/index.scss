@@ -95,6 +95,7 @@ body {
     border-radius: 10px;
     padding-left: 10px;
     margin: 10px 0px;
+    border: 1px solid hsl(270, 3%, 87%);
   }
 
   .form__name, .form__number, button {
@@ -118,4 +119,9 @@ body {
   .form__cvc {
     grid-column: 3 / 5;
   }
+}
+
+.form__name > input:focus {
+  border: 1px solid hsl(249, 99%, 64%);
+  outline: none;
 }
