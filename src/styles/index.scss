@@ -6,35 +6,37 @@ body {
   background: url(../images/bgMainDesktop.png) no-repeat;
   background-size: 35% 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 300;
 }
 
 // CARD IMAGE
 .card {
-  width: 40vw;
-  height: 70vh;
+  width: 35vw;
+  height: auto;
   display: flex;
+  float: left;
   flex-direction: column;
   justify-content: center;
   color: white;
-  border: 1px solid red;
+  margin-right: 8vw;
 }
 
 .card__front {
-  border: 1px solid green;
 
   img  {
     position: relative;
     float: left;
-    width: 35vw;
-    height: 30vh;
+    width: 30vw;
+    height: auto;
   }
 
   .card__front__cntr {
     position: absolute;
-    padding: 2.5vw;
-    width: 30vw;
+    padding: 2vw;
+    width: 25vw;
     height: 23vh;
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@ body {
     }
 
     .card__front__text--nr {
-      font-size: 2.5vw;
+      font-size: 2vw;
       width: 95%;
       line-height: 2vh;
     }
@@ -62,10 +64,10 @@ body {
 
 .card__back {  
   .card__back-img {
-    margin-top: 3vh;
+    margin-top: 5vh;
     float: right;
-    width: 35vw;
-    height: 25vh;
+    width: 30vw;
+    height: auto;
   };
 }
 
@@ -73,9 +75,8 @@ body {
 .form {
   width: 40vw;
   height: 70vh;
-  flex-direction: row;
-  border: 1px solid blue;
   color: black;
+  float: right;
   display: flex;
   align-items: center;
   text-transform: capitalize;
