@@ -1,6 +1,6 @@
 function CardForm() {
   return (
-    <form>
+    <form className="form__cntr">
       <div className="form__name">
         <label>Cardholder Name</label>
         <input type="text" name="name" placeholder="e.g. Jane Appleseed" />
@@ -13,8 +13,9 @@ function CardForm() {
 
       <div className="form__exp">
         <label>Exp. Date (MM/YY)</label>
-        <input type="number" name="expmonth" placeholder="MM" />
-        <input type="number" name="expyear" placeholder="YY" />
+        <input className="form__exp--month" type="number" name="expmonth" placeholder="MM" />
+        <input className="form__exp--year" type="number" name="expyear" placeholder="YY" />
+        
       </div>
 
       <div className="form__cvc">
