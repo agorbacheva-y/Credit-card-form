@@ -125,7 +125,21 @@ body {
   }
 }
 
-.form__name > input:focus {
+.form__name > input:focus,
+.form__number > input:focus,
+.form__exp > input:focus,
+.form__cvc > input:focus {
   border: 1px solid hsl(249, 99%, 64%);
+  outline: none;
+}
+
+.form__number > input:invalid {
+  border: 1px solid hsl(0, 100%, 66%);
+  outline: none;
+}
+
+.form__exp > input:required,
+.form__cvc > input:required {
+  border: 1px solid hsl(0, 100%, 66%);
   outline: none;
 }
