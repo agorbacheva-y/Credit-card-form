@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function CardForm() {
+function CardForm({ setShowForm, setShowMsg }) {
   const [ card, setCard ] = useState({
     name: "",
     number: "",
@@ -22,6 +22,11 @@ function CardForm() {
     e.prevent.default();
 
     setCard({name: "", number: "", expmonth: "", expyear: "", cvc: ""});
+  }
+
+  const handleClick = (e) => {
+    setShowForm(false);
+    setShowMsg(true);
   }
 
 
@@ -86,7 +91,10 @@ function CardForm() {
         />
       </div>
 
-      <button type="submit">Confirm</button>
+      <button 
+        type="submit"
+        onClick={handleClick}
+      >Confirm</button>
     </form>
   );
 };
