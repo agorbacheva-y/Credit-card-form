@@ -144,10 +144,22 @@ body {
   outline: none;
 }
 
+.form__name > input:required,
+.form__number > input:required,
 .form__exp > input:required,
 .form__cvc > input:required {
   border: 1px solid hsl(0, 100%, 66%);
   outline: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 2vh 0;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 // THANK YOU MESSAGE
@@ -162,6 +174,11 @@ body {
   > img {
     width: 7vw;
   }
+}
+
+.message__text {
+  text-align: center;
+  margin: 30px 0;
 
   > h1 {
     text-transform: uppercase;
@@ -172,15 +189,5 @@ body {
   > p {
     font-size: 16px;
     letter-spacing: 1px;
-  }
-
-  > button {
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    width: 20vw;
-    padding: 2vh 0;
-    font-size: 16px;
-    letter-spacing: 2px;
   }
 }
