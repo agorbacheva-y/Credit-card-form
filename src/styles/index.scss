@@ -15,6 +15,11 @@ body {
   font-weight: 300;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+
 // CARD IMAGE
 .card {
   width: 35vw;
@@ -79,6 +84,7 @@ body {
 // CARD FORM
 .form {
   width: 25vw;
+  height: 40vh;
   color: black;
   display: flex;
   font-size: 12px;
@@ -90,6 +96,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: 20px;
+  display: none;
 
   > label, input {
     display: block;
@@ -142,4 +149,39 @@ body {
 .form__cvc > input:required {
   border: 1px solid hsl(0, 100%, 66%);
   outline: none;
+}
+
+// THANK YOU MESSAGE
+.message__cntr {
+  width: 35vw;
+  display: flex;
+  float: right;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+
+  > img {
+    width: 7vw;
+  }
+
+  > h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  > p {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  > button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 20vw;
+    padding: 2vh 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
 }

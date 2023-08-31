@@ -1,10 +1,11 @@
 import CardFront from './components/CardFront';
 import CardBack from './components/CardBack';
 import CardForm from './components/CardForm';
+import CardAdded from './components/CardAdded';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <div className="card">
         <CardFront />
         <CardBack />
@@ -12,6 +13,7 @@ function App() {
 
       <div className="form">
         <CardForm />
+        <CardAdded />
       </div>
     </div>
   );
