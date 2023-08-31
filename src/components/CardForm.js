@@ -58,25 +58,26 @@ function CardForm({ setShowForm, setShowMsg }) {
 
       <div className="form__exp">
         <label>Exp. Date (MM/YY)</label>
-        <input  className="form__exp--month" 
-                type="number" 
-                name="expmonth"
-                value={card.expmonth}
-                placeholder="MM" 
-                pattern="[01 - 12]" 
-                required 
-                onChange={handleChange}
-        />
-        <input  className="form__exp--year" 
-                type="number" 
-                name="expyear" 
-                value={card.expyear}
-                placeholder="YY" 
-                maxLength="2"
-                required 
-                onChange={handleChange}
-        />
-        
+        <div className="form__exp--date">
+          <input  className="form__exp--month" 
+                  type="number" 
+                  name="expmonth"
+                  value={card.expmonth}
+                  placeholder="MM" 
+                  pattern="[01 - 12]" 
+                  required 
+                  onChange={handleChange}
+          />
+          <input  className="form__exp--year" 
+                  type="number" 
+                  name="expyear" 
+                  value={card.expyear}
+                  placeholder="YY" 
+                  maxLength="2"
+                  required 
+                  onChange={handleChange}
+          />
+        </div>
       </div>
 
       <div className="form__cvc">
