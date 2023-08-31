@@ -21,7 +21,7 @@ const [ showMsg, setShowMsg ] = useState(false);
         )}
         
         {showMsg && (
-          <CardAdded />
+          <CardAdded setShowForm={setShowForm} setShowMsg={setShowMsg} />
         )}
       </div>
     </div>

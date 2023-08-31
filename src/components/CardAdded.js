@@ -1,6 +1,11 @@
 import complete from "../images/complete.svg";
 
-function CardAdded() {
+function CardAdded({ setShowForm, setShowMsg }) {
+  const handleClick = () => {
+    setShowForm(true);
+    setShowMsg(false);
+  }
+
   return (
     <div className="message__cntr">
       <img src={complete} alt="complete"/>
@@ -8,7 +13,10 @@ function CardAdded() {
         <h1>Thank you!</h1>
         <p>We've added your card details</p>
       </div>  
-      <button>Continue</button>
+      <button
+        type="submit"
+        onClick={handleClick}
+      >Continue</button>
     </div>
   );
 };

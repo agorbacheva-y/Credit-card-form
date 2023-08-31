@@ -24,7 +24,7 @@ function CardForm({ setShowForm, setShowMsg }) {
     setCard({name: "", number: "", expmonth: "", expyear: "", cvc: ""});
   }
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     setShowForm(false);
     setShowMsg(true);
   }
