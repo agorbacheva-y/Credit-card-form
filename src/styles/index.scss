@@ -301,3 +301,23 @@ button {
     align-items: flex-start;
   }
 }
+
+@media screen and (max-width: 435px) {
+  .form__cntr {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .card {
+    height: 33vh; 
+  }
+
+  .card__front__text--nr {
+    font-size: 6vw;
+  }
+
+  .card__front__text--name {
+      font-size: 3vw;
+  }
+}
