@@ -201,7 +201,7 @@ button {
   }
 
   .card {
-    width: 80vw;
+    width: 75vw;
     height: 40vh; 
     margin: 20px auto;
     color: white;
@@ -214,7 +214,7 @@ button {
   }
 
   .card__front {
-    width: 60%;
+    width: 50%;
     bottom: 0;
     z-index: 1;
 
@@ -223,14 +223,13 @@ button {
     }
 
     .card__front__cntr {
-      padding: 3vw;
   
       > img {
         width: 25%;
       }
   
       .card__front__text--nr {
-        font-size: 3vw;
+        font-size: 2.5vw;
       }
   
       .card__front__text--name {
@@ -240,7 +239,7 @@ button {
   }
 
   .card__back {  
-    width: 60%;
+    width: 50%;
     right: 0%;
 
     > img {
@@ -263,13 +262,13 @@ button {
 
 @media screen and (max-width: 1000px) {
   .card__front {
-    width: 80%;
+    width: 60%;
 
     .card__front__cntr {
       padding: 4vw;
 
       .card__front__text--nr {
-        font-size: 4vw;
+        font-size: 3vw;
       }
   
       .card__front__text--name {
@@ -279,11 +278,22 @@ button {
   }
 
   .card__back {  
-    width: 80%;
+    width: 60%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
+  .message__cntr {
+    margin-top: 20px;
+    width: 50vw;
+  
+    > img {
+      width: 10vw;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
   .card {
     width: 90vw;
     margin: 30px auto;
@@ -302,9 +312,29 @@ button {
   }
 }
 
+@media screen and (max-width: 525px) {
+  .message__cntr {
+    width: 60vw;
+  
+    > img {
+      width: 12vw;
+    }
+  }
+}
+
 @media screen and (max-width: 435px) {
   .form__cntr {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .message__cntr {
+    width: 70vw;
+  
+    > img {
+      width: 15vw;
+    }
   }
 }
 
@@ -319,5 +349,13 @@ button {
 
   .card__front__text--name {
       font-size: 3vw;
+  }
+
+  .message__cntr {
+    width: 80vw;
+  
+    > img {
+      width: 20vw;
+    }
   }
 }
