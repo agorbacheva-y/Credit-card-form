@@ -201,7 +201,7 @@ button {
   }
 
   .card {
-    width: 70vw;
+    width: 80vw;
     height: 40vh; 
     margin: 20px auto;
     color: white;
@@ -220,6 +220,22 @@ button {
 
     > img {
       width: 100%;
+    }
+
+    .card__front__cntr {
+      padding: 3vw;
+  
+      > img {
+        width: 25%;
+      }
+  
+      .card__front__text--nr {
+        font-size: 3vw;
+      }
+  
+      .card__front__text--name {
+          font-size: 1.5vw;
+      }
     }
   }
 
@@ -241,6 +257,28 @@ button {
   }
 
   .form__cntr {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card__front {
+    width: 80%;
+
+    .card__front__cntr {
+      padding: 4vw;
+
+      .card__front__text--nr {
+        font-size: 4vw;
+      }
+  
+      .card__front__text--name {
+          font-size: 2vw;
+      }
+    }
+  }
+
+  .card__back {  
     width: 80%;
   }
 }
