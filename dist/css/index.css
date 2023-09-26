@@ -304,4 +304,8 @@ button {
   .message__cntr > img {
     width: 20vw;
   }
+}
+.attribution {
+  color: white;
+  font-size: 10px;
 }/*# sourceMappingURL=index.css.map */
